@@ -1,0 +1,145 @@
+.ng-valid[required], .ng-valid.required  {
+  border-left: 7px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 7px solid #a94442; /* red */
+}
+
+
+  .body{background: url("./../../../../assets/img/pattern.png");}
+
+  .container {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: white;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .buttonNight {
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    outline: 0;
+    cursor: pointer;
+
+  }
+
+  button{border-radius: 50%;}
+  button:hover {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+  .button-image {
+    background-image: url("../../../../assets/img/modo-nocturno-removebg-preview.png");
+    background-image: 40px 40px;
+    height: 40px;
+    width:40px;
+    justify-content: center;
+    vertical-align: middle;
+    border-radius: 50% ;
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  }
+
+
+.button-image:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+  body.night-mode {
+    width: 98.9vw;
+    height: 98.9vh;
+    background: linear-gradient(334deg,  #aa36a5, #aa36a5, #aa36a5, #aa36a5, #aa36a5, #9d48b4, #8f56c1, #7e63cc, #517bdb, #058ede, #009dd9, #00aace);
+    background-size: 180% 180%;
+    animation: gradient-animation 7s ease infinite;
+
+  }
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+@keyframes gradient-animation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+  }
+
+@keyframes banner {
+	0% {transform: scale3d(1, 1, 1);}
+	30% {transform: scale3d(1.25, 0.75, 1);}
+	40% {transform: scale3d(0.75, 1.25, 1);}
+	50% {transform: scale3d(1.15, 0.85, 1);}
+	65% {transform: scale3d(0.95, 1.05, 1);}
+	75% {transform: scale3d(1.05, 0.95, 1);}
+	100% {transform: scale3d(1, 1, 1);}
+}
+
+@keyframes home {
+	0%,100% {transform: translateX(0%);transform-origin: 50% 50%;}
+	15% {transform: translateX(-30px) rotate(-6deg);}
+	30% {transform: translateX(15px) rotate(6deg);}
+	45% {transform: translateX(-15px) rotate(-3.6deg);}
+	60% {transform: translateX(9px) rotate(2.4deg);}
+	75% {transform: translateX(-6px) rotate(-1.2deg);}
+}
+
+@keyframes followme {0% {opacity: 0;transform: translateX(-250px);}100% {opacity: 1;transform: translateX(0);}}
+@keyframes color_anim {0% {fill: white;}50% {fill: #00aace;}100% {fill: white;}}
+@keyframes typewriter {from { width: 0; }to { width: 100%; }}
+@keyframes blinkingCursor{from { border-right-color: rgba(255,255,255,.75); }to { border-right-color: transparent; }}
+
+/*
+    CLASES é IDES
+*/
+
+    #follow{animation: followme 3s ease-out 1s 2 normal none}
+
+    #banner{animation: banner 6s ease-out 2s infinite normal forwards;}
+
+    #home{animation: home 3s ease-out 7s  normal none;}
+
+    .nombreLogo {animation: typewriter 7s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50)  normal forwards;}
+
+    .container{border-radius: 20px;}
+
+    body{background: #F8F9F9;}
+
+    .gradiant {background: linear-gradient(-45deg,#7e63cc,#7e63cc, #517bdb, #058ede, #009dd9, #00aace, #aa36a5, #aa36a5, #aa36a5, #aa36a5, #aa36a5 );border-radius: 10px;}
+
+    .gradiant:hover {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+    .shadow{transition: box-shadow 0.5s ease-in-out;}
+
+    .shadow:hover{box-shadow: 4px 2px 9px 0px rgba(0,0,0,1);}
+
+    a{text-decoration: none;}
+
+    .cursor{width: 14em;margin: 0 auto;font-size: 20px;text-align: center;white-space: nowrap;overflow: hidden; }
+
+    button{margin-right: 10px; padding: 0px 0px 0px 0px; border-radius: 50%;}
+
+/* ======================== soundKeys ================== */
+
+.page .keys .key .playing {}
+
+/* ======================== soundKeys ================== */
+
+.btn-circle-azul-submit {
+  height: 42px;
+  width: 42px;
+  font-size: 19px;
+  font-weight: bolder;
+  background-color: #00aaee;
+  color:white;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn-circle-azul-submit:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

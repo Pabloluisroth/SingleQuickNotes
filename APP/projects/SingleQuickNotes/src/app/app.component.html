@@ -1,0 +1,21 @@
+
+<br><app-nav></app-nav>
+<app-home></app-home>
+
+<div class="container">
+  <router-outlet>
+      <h2 id="cartel2" class="derecha">{{title}}</h2><br><br>
+      <button *ngIf="element == false" (click)="showData()"class="btn"><img class="button-image" src="./../assets/img/informacion-removebg-preview.png"></button>
+      <button *ngIf="element == true" (click)="hideData()"class="btn"><img class="button-image" src="./../assets/img/informacion-removebg-preview.png"></button>
+  </router-outlet>
+</div>
+
+<div *ngIf="element == true"><br><app-acordeon></app-acordeon></div><br>
+<app-footer></app-footer>
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+
+/*
+    FUENTES
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+
+@font-face{
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+    src: url('/../assets/font/JosefinSlab-Regular.ttf')format('ttf');
+    src: url('/../assets/font/Nunito-Regular.ttf')format('ttf');
+    src: url('/../assets/font/Ysabeau-Regular.ttf')format('ttf');
+}
+
+    #parrafo{font-family: 'Josefin Slab', serif;font-size: 20px;text-align: justify;}
+    #parrafo2{font-family: 'Josefin Slab', serif;font-size: 22px;text-align: justify;}
+    #link{font-family: 'Nunito', sans-serif;font-size: 20px;text-align: justify;}
+    #encabezado{font-family: 'Nunito', sans-serif;font-size: 30px;text-align: justify;}
+    #encabezado2{font-family: 'Nunito', sans-serif;font-size: 30px;text-align: center;}
+    #encabezado-blanco{font-family: 'Nunito', sans-serif;font-size: 25px;text-align: center;color:white;}
+    #encabezado-blanco-p{font-family: 'Nunito', sans-serif;font-size: 19px;text-align: center;color:white;}
+    #cartel{font-family: 'Ysabeau', sans-serif;font-size: 27px;text-align: center;}
+
+    #cartel2{
+      font-family: 'Ysabeau', sans-serif;
+      font-size: 25px;
+      text-align: center;
+      color: #6a6c6f;
+      font-weight: 300;
+      line-height: 1;
+      -webkit-transition: -webkit-transform .25s linear;
+    }
+
+    #parrafo3{
+      font-family: 'Ysabeau', sans-serif;
+      font-size: 25px;
+      text-align: justify;
+      color: #6a6c6f;
+      font-weight: 300;
+      line-height: 1;
+      -webkit-transition: -webkit-transform .25s linear;
+    }
+/*
+    ANIMACIONES
+*/
+
+@keyframes banner {
+	0% {transform: scale3d(1, 1, 1);}
+	30% {transform: scale3d(1.25, 0.75, 1);}
+	40% {transform: scale3d(0.75, 1.25, 1);}
+	50% {transform: scale3d(1.15, 0.85, 1);}
+	65% {transform: scale3d(0.95, 1.05, 1);}
+	75% {transform: scale3d(1.05, 0.95, 1);}
+	100% {transform: scale3d(1, 1, 1);}
+}
+
+@keyframes home {
+	0%,100% {transform: translateX(0%);transform-origin: 50% 50%;}
+	15% {transform: translateX(-30px) rotate(-6deg);}
+	30% {transform: translateX(15px) rotate(6deg);}
+	45% {transform: translateX(-15px) rotate(-3.6deg);}
+	60% {transform: translateX(9px) rotate(2.4deg);}
+	75% {transform: translateX(-6px) rotate(-1.2deg);}
+}
+
+@keyframes followme {0% {opacity: 0;transform: translateX(-250px);}100% {opacity: 1;transform: translateX(0);}}
+@keyframes color_anim {0% {fill: white;}50% {fill: #00aace;}100% {fill: white;}}
+@keyframes typewriter {from { width: 0; }to { width: 100%; }}
+@keyframes blinkingCursor{from { border-right-color: rgba(255,255,255,.75); }to { border-right-color: transparent; }}
+
+/*
+    CLASES é IDES
+*/
+
+    #follow{animation: followme 3s ease-out 1s 2 normal none}
+
+    #banner{animation: banner 6s ease-out 2s infinite normal forwards;}
+
+    #home{animation: home 3s ease-out 7s  normal none;}
+
+    .container{border-radius: 20px;}
+    .container:hover{box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 1px 6px rgba(0,0,0,0.23),0 3px 6px rgba(0,0,0,0.23);}  // que color pongo que mole de mi gama de colores
+
+
+    .gradiant {background: linear-gradient(-45deg,#7e63cc,#7e63cc, #517bdb, #058ede, #009dd9, #00aace, #aa36a5, #aa36a5, #aa36a5, #aa36a5, #aa36a5 );border-radius: 10px;}
+
+    .gradiant:hover {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+    body{background: url("/../assets/pattern.png");}
+
+    .shadow{transition: box-shadow 0.5s ease-in-out;}
+
+    .shadow:hover{box-shadow: 4px 2px 9px 0px rgba(0,0,0,1);}
+
+    a{text-decoration: none;}
+
+    .cursor{width: 14em;margin: 0 auto;font-size: 20px;text-align: center;white-space: nowrap;overflow: hidden; }
+
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    @keyframes gradient-animation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    body{background: url("./assets/img/pattern.png");}//pattern.png
+
+    .container {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
+      background: white;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .nombreLogo {
+      animation: typewriter 7s steps(50) 1s 1 normal both,blinkingCursor 500ms steps(50)  normal forwards;
+    }
+
+    .buttonNight {
+      border: none;
+      text-align: center;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: white;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      outline: 0;
+      cursor: pointer;
+    }
+
+    .button-image {
+      background-image: url("../src/assets/img/modo-nocturno-removebg-preview.png");
+      background-image: 40px 40px;
+      height: 40px;
+      width: 40px;
+      justify-content: center;
+      vertical-align: middle;
+    }
+
+    body.night-mode {
+      width: 98.9vw;
+      height: 98.9vh;
+      background: linear-gradient(334deg,  #aa36a5, #aa36a5, #aa36a5, #aa36a5, #aa36a5, #9d48b4, #8f56c1, #7e63cc, #517bdb, #058ede, #009dd9, #00aace);
+      background-size: 180% 180%;
+      animation: gradient-animation 7s ease infinite;
+    }
+
+    .btn-circle{
+      width: 45px;
+      height: 45px;
+      padding: 6px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      line-height: 1.42857;
+      margin-right: 20px;
+    }
+
+    .btn-circle-right{
+      width: 44px;
+      height: 44px;
+      padding: 6px 0px 6px 0px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 19px;
+      font-weight: bolder;
+      color:white;
+      line-height: 1.42857;
+    }
+
+    .btn-cancel{
+      width: 45px;
+      height: 45px;
+      padding: 6px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      line-height: 1.42857;
+      margin-right: 20px;
+      background-color: #dd0531;
+    }
+
+
+

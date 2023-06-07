@@ -1,0 +1,314 @@
+
+  <div class=" px-lg-5"  *ngIf="tarea"><br>
+
+    <div class="btn-toolbar justify-content-md-around" role="toolbar" aria-label="Third group">
+      <div class="btn-toolbar justify-content-md-around" role="toolbar" aria-label="Third group">
+        <button class="nightModeButton buttonNight rounded-circle" id="banner"><img class="button-image" src="../../assets/img/modo-nocturno-removebg-preview.png"></button>
+        <button class="nightModeButton buttonNight rounded-circle" *ngIf=" audioConfig == false" (click)=" configAudio()" ><img class="button-image" src="./../assets/img/auricular-removebg-preview.png"></button>
+        <button class="nightModeButton buttonNight rounded-circle" *ngIf=" audioConfig == true" (click)="hideconfigAudio()"><img class="button-image" src="./../assets/img/auricular-removebg-preview.png"></button>
+      </div>
+    </div>
+
+        <form class="form-inline">
+          <fieldset class="form-group col-sm-11"></fieldset>
+          <fieldset class="form-group col-sm-1"><a [routerLink]="['/tareas/lista']"><img class="button-image " src="./../assets/img/menos-removebg-preview.png"></a></fieldset>
+        </form>
+
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="page-header">
+                <h5 id="parrafo3">&nbsp;&nbsp;{{title}}</h5><br>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-12">
+              <form (ngSubmit)="onSubmit()" #tareaForm="ngForm">
+
+                  <fieldset class="form-group">
+                      <div class="col-sm-12">
+                          <label class="control-label" id="parrafo" for="titulo"><b>{{titulo}}</b></label>
+                          <input type="text" class="form-control" required [(ngModel)]="tarea.titulo" name="titulo">
+                      </div>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                      <div class="col-sm-3">
+                          <label class="control-label" id="parrafo" for="fecha"><b>{{fecha}}</b></label>
+                          <input type="date" class="form-control" required [ngModel]="tarea.fecha | date: 'yyyy-MM-dd'"(ngModelChange)="tarea.fecha=$event" name="fecha"/>
+                      </div>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                      <div class="col-sm-3">
+                          <label class="control-label" id="parrafo" for="estado"><b>{{estado}}</b></label>
+                          <select class="form-control" required [(ngModel)]="tarea.estado" name="estado">
+                              <option *ngFor="let estado of tareaEstadosSelect" [value]="estado.value">{{estado.value}}</option>
+                          </select>
+                      </div>
+                  </fieldset>
+
+                  <fieldset class="form-group ">
+                      <div class="col-sm-offset-2 col-sm-10">
+                          <button  type="submit" class=" btn-circle-azul-submit" id="encabezado" [disabled]="!tareaForm.form.valid" (click)="showModal()"><span style='font-size:20px;'>&nbsp;&nbsp;&#10004;</span></button>
+                        </div><br>
+                  </fieldset>
+
+              </form>
+          </div>
+      </div>
+
+
+
+    <div class="page" >
+      <div class="keys" (document:keydown)="onKeydown($event)"><!-- crear boton-->
+          <!-- letras-->
+          <div class="key" data-keyCode="KeyQ"></div>
+          <div class="key" data-keyCode="KeyW"></div>
+          <div class="key" data-keyCode="KeyE"></div>
+          <div class="key" data-keyCode="KeyR"></div>
+          <div class="key" data-keyCode="KeyT"></div>
+          <div class="key" data-keyCode="KeyY"></div>
+          <div class="key" data-keyCode="KeyU"></div>
+          <div class="key" data-keyCode="KeyI"></div>
+          <div class="key" data-keyCode="KeyO"></div>
+          <div class="key" data-keyCode="KeyP"></div>
+          <div class="key" data-keyCode="KeyA"></div>
+          <div class="key" data-keyCode="KeyS"></div>
+          <div class="key" data-keyCode="KeyD"></div>
+          <div class="key" data-keyCode="KeyF"></div>
+          <div class="key" data-keyCode="KeyG"></div>
+          <div class="key" data-keyCode="KeyH"></div>
+          <div class="key" data-keyCode="KeyJ"></div>
+          <div class="key" data-keyCode="KeyK"></div>
+          <div class="key" data-keyCode="KeyL"></div>
+          <div class="key" data-keyCode="KeyÑ"></div>
+          <div class="key" data-keyCode="KeyZ"></div>
+          <div class="key" data-keyCode="KeyX"></div>
+          <div class="key" data-keyCode="KeyC"></div>
+          <div class="key" data-keyCode="KeyV"></div>
+          <div class="key" data-keyCode="KeyB"></div>
+          <div class="key" data-keyCode="KeyN"></div>
+          <div class="key" data-keyCode="KeyM"></div>
+          <div class="key" data-keyCode="Key,"></div>
+          <div class="key" data-keyCode="Key."></div>
+          <div class="key" data-keyCode="Key-"></div>
+          <!-- digitos-->
+          <div class="key" data-keyCode="Digit0"></div>
+          <div class="key" data-keyCode="Digit1"></div>
+          <div class="key" data-keyCode="Digit2"></div>
+          <div class="key" data-keyCode="Digit3"></div>
+          <div class="key" data-keyCode="Digit4"></div>
+          <div class="key" data-keyCode="Digit5"></div>
+          <div class="key" data-keyCode="Digit6"></div>
+          <div class="key" data-keyCode="Digit7"></div>
+          <div class="key" data-keyCode="Digit8"></div>
+          <div class="key" data-keyCode="Digit9"></div>
+          <div class="key" data-keyCode="Minus"></div>
+          <div class="key" data-keyCode="equal"></div>
+          <div class="key" data-keyCode="Backspace"></div>
+          <!-- numeros-->
+          <div class="key" data-keyCode="Numpad0"></div>
+          <div class="key" data-keyCode="Numpad1"></div>
+          <div class="key" data-keyCode="Numpad2"></div>
+          <div class="key" data-keyCode="Numpad3"></div>
+          <div class="key" data-keyCode="Numpad4"></div>
+          <div class="key" data-keyCode="Numpad5"></div>
+          <div class="key" data-keyCode="Numpad6"></div>
+          <div class="key" data-keyCode="Numpad7"></div>
+          <div class="key" data-keyCode="Numpad8"></div>
+          <div class="key" data-keyCode="Numpad9"></div>
+          <div class="key" data-keyCode="Numpad-zero"></div>
+          <div class="key" data-keyCode="Numpad-dot"></div>
+          <div class="key" data-keyCode="NumpadEnter"></div>
+          <div class="Key" data-KeyCode="NumpadDivide"></div>
+          <div class="Key" data-KeyCode="NumpadMultiply"></div>
+          <div class="Key" data-KeyCode="NumpadSubtract"></div>
+          <div class="Key" data-KeyCode="NumpadAdd"></div>
+          <div class="Key" data-KeyCode="NumpadDecimal"></div>
+          <!-- otros-->
+          <div class="key" data-keyCode="Semicolon"></div>
+          <div class="key" data-keyCode="Quote"></div>
+          <div class="key" data-keyCode="Backslash"></div>
+          <div class="key" data-keyCode="Tab"></div>
+          <div class="key" data-keyCode="CapsLock"></div>
+          <div class="key" data-keyCode="Delete"></div>
+          <div class="Key" data-keyCode="Comma"></div>
+          <div class="Key" data-keyCode="Period"></div>
+          <div class="Key" data-keyCode="Slash"></div>
+          <div class="Key" data-keyCode="ContextMenu"></div>
+          <div class="Key" data-keyCode="BracketLeft"></div>
+          <div class="Key" data-keyCode="BracketRight"></div>
+          <div class="Key" data-keyCode="CapsLock"></div>
+          <div class="Key" data-keyCode="Enter"></div>
+          <div class="Key" data-keyCode="ScrollLock"></div>
+          <div class="Key" data-keyCode="Pause"></div>
+          <div class="Key" data-keyCode="Insert"></div>
+          <div class="Key" data-keyCode="Home"></div>
+          <div class="Key" data-keyCode="PageUp"></div>
+          <div class="Key" data-keyCode="Delete"></div>
+          <div class="Key" data-keyCode="End"></div>
+          <div class="Key" data-keyCode="PageDown"></div>
+          <div class="Key" data-keyCode="Backquote"></div>
+          <div class="Key" data-KeyCode="NumLock"></div>
+          <div class="Key" data-KeyCode=""></div>
+          <!-- direccion-->
+          <div class="key" data-keyCode="ShiftLeft"></div>
+          <div class="key" data-keyCode="ShiftRight"></div>
+          <div class="key" data-keyCode="ControlLeft"></div>
+          <div class="key" data-keyCode="MetaLeft"></div>
+          <div class="key" data-keyCode="AltLeft"></div>
+          <div class="key" data-keyCode="Space"></div>
+          <div class="key" data-keyCode="AltRight"></div>
+          <div class="key" data-keyCode="MetaRight"></div>
+          <div class="key" data-keyCode="ControlRight"></div>
+          <div class="key" data-keyCode="ShiftLeft"></div>
+          <div class="Key" data-KeyCode="Escape"></div>
+           <!-- cruzeta-->
+          <div class="key" data-keyCode="ArrowUp"></div>
+          <div class="key" data-keyCode="ArrowLeft"></div>
+          <div class="key" data-keyCode="ArrowDown"></div>
+          <div class="key" data-keyCode="ArrowRight"></div>
+          <!--F-->
+          <div class="Key" data-KeyCode="F1"></div>
+          <div class="Key" data-KeyCode="F2"></div>
+          <div class="Key" data-KeyCode="F3"></div>
+          <div class="Key" data-KeyCode="F4"></div>
+          <div class="Key" data-KeyCode="F5"></div>
+          <div class="Key" data-KeyCode="F6"></div>
+          <div class="Key" data-KeyCode="F7"></div>
+          <div class="Key" data-KeyCode="F8"></div>
+          <div class="Key" data-KeyCode="F9"></div>
+          <div class="Key" data-KeyCode="F10"></div>
+          <div class="Key" data-KeyCode="F11"></div>
+          <div class="Key" data-KeyCode="F12"></div>
+      </div>
+      <!-- audio press key-->
+      <audio data-keyCode="KeyQ" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyW" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyE" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyR" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyT" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyY" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyU" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyI" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyO" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyP" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyA" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyS" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyD" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyF" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyG" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyH" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyJ" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyK" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyL" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyÑ" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyZ" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyX" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyC" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyV" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyB" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="KeyM" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Key," src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Key." src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Key-" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Key_" src="../assets/audio/keytype.mp3"></audio>
+      <!-- digitos-->
+      <audio data-keyCode="Digit1" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit2" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit3" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit4" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit5" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit6" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit7" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit8" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit9" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Digit0" src="../assets/audio/keytype.mp3"></audio>
+      <!-- numeros-->
+      <audio data-keyCode="Numpad0"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad1"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad2"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad3"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad4"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad5"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad6"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad7"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad8"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad9"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad-zero"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Numpad-dot"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="NumpadEnter"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="NumpadDecimal" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="NumpadAdd"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="NumpadDivide" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="NumpadMultiply" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="NumpadSubtract" src="../assets/audio/keytype.mp3"></audio>
+      <!-- otros-->
+      <audio data-keyCode="Semicolon"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Quote"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Backslash"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Tab"         src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="CapsLock"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Minus"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="equal"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Backspace"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Comma"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Period"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Slash"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ContextMenu" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="BracketLeft" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="BracketRight" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="CapsLock"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Enter"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ScrollLock"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Pause"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Insert"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Home"        src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="PageUp"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Delete"      src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="End"         src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="PageDown"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCOde="Backquote"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="NumLock"     src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode=""            src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="Escape"      src="../assets/audio/keytype.mp3"></audio>
+      <!-- direccion-->
+      <audio data-keyCode="ShiftLeft"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ShiftRight"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ControlLeft" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="MetaLeft"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="AltLeft"     src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="Space"       src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="AltRight"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="MetaRight"   src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ControlRight" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ShiftLeft"   src="../assets/audio/keytype.mp3"></audio>
+      <!-- cruzeta-->
+      <audio data-keyCode="ArrowUp"    src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ArrowLeft"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ArrowDown"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-keyCode="ArrowRight" src="../assets/audio/keytype.mp3"></audio>
+      <!--F-->
+      <audio data-KeyCode="F1"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F2"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F3"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F4"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F5"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F6"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F7"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F8"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F9"  src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F10" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F11" src="../assets/audio/keytype.mp3"></audio>
+      <audio data-KeyCode="F12" src="../assets/audio/keytype.mp3"></audio>
+    </div>
+
+
+
+
+
+
+
+

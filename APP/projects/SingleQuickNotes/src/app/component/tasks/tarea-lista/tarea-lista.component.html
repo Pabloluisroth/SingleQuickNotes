@@ -1,0 +1,46 @@
+
+<div class="body">
+  <div class=" px-lg-5"><br>
+
+    <div class="btn-toolbar justify-content-md-around" role="toolbar" aria-label="Third group">
+      <div class="btn-toolbar justify-content-md-around" role="toolbar" aria-label="Third group">
+        <button class="nightModeButton buttonNight rounded-circle" id="banner"><img class="button-image" src="../../assets/img/modo-nocturno-removebg-preview.png"></button>
+      </div>
+    </div>
+
+        <div class="row ">
+           <div class="col-sm-12">
+                <form class="form-inline">
+                  <fieldset class="form-group col-sm-11"></fieldset>
+                  <fieldset class="form-group col-sm-1"><a [routerLink]="['/tareas/new']"><img class="button-image " src="./../assets/img/mas-removebg-preview.png"></a></fieldset>
+                </form>
+
+                <h5 id="parrafo3">{{title}}</h5>
+                <br>
+
+                <table class="table table-striped ">
+                    <thead>
+                        <tr class="row " >
+                            <th class="col-sm-6" id="parrafo">{{titulo}}</th>
+                            <th class="col-sm-2" id="parrafo">{{fecha}}</th>
+                            <th class="col-sm-2" id="parrafo">{{estado}}</th>
+                            <th class="col-sm-1"></th>
+                            <th class="col-sm-1"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let tarea of tareas | async"  class="row">
+                          <td class="col-sm-6" ><i>{{tarea.titulo}}</i></td>
+                          <td class="col-sm-2"><i>{{tarea.fecha | date:'dd-MM-yyyy'}}</i></td>
+                          <td class="col-sm-2"><i>{{tarea.estado}}</i></td>
+                          <td class="col-sm-1"><a class="btn-circle btn-info " id="encabezado-blanco"[routerLink]="['/tareas',tarea._id,'edit']"><span style='font-size:25px;'>&#9999;</span></a></td>
+                          <td class="col-sm-1"><a class="btn-cancel btn-danger" id="encabezado-blanco"(click)="deleteTarea(tarea._id)"><span style='font-size:20px;'>&#10006;</span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+        </div>
+    </div>
+    <br>
+  </div>
