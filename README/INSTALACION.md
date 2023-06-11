@@ -19,13 +19,17 @@
 >      ![INSTALACION](/README/Resources/img/ejecutarServer.PNG).
 > 13.   Desde la propia ventada de CMD deberiamos de ver el texto correspondiente al evento "conected", que indicara que la conexion se ha realizado correctamente.
 >
-## Ejecutar aplicacion en Angular: 'SingleQuickNotes'
+## 1º   Ejecutar aplicacion con comandos Angular: 'SingleQuickNotes'
 >
 > 0.    Introduce `ng build` para crear el repositorio que sera desplegado con el servidor.
 > 1.    Introduce en la cmd: `ng serve --project SingleQuickNotes` para ejecutar aplicacion en el directorio raiz. 
 > 2.    Ó puedes acceder introduciendo `ng serve` enla ruta absoluta de la aplicion.
-> 3.    La aplicacion esta en funcionamiento.   
+> 3.    La aplicacion esta en ejecución.
 > 4.    Abre un navegador web 'Crome' y situese en `http://localhost:4200/` para acceder a la aplicacion en ejecución.
+> 
+## 2º   Iniciar aplicacion : 'SingleQuickNotes'
+> 1.    Situado en el directorio  `server` introduce en la cmd:`node server.js` 
+> 4.    Abre un navegador web 'Crome' y situese en `http://localhost:3000/` para acceder a la aplicacion en funcionamiento en un entorno local.
 
 
       
