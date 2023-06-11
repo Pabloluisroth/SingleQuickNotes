@@ -4,11 +4,18 @@ const chalk  = require('chalk');
 var mongoose = require('mongoose');
 const logger = require('./config/logger');
 const app = require('./config/app');
-require('dotenv').config();
-const mongoString = process.env.DATABASE_URL
+require('./config/environment ');
 
-mongoose.connect(mongoString, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 const database = mongoose.connection
+mongoose.connect("mongodb+srv://admin:SingleQuickNotes@cluster0.v5hhzmy.mongodb.net/tareas", {
+  useNewUrlParser: "true",
+  useUnifiedTopology: "true"
+})
+
+/*
+  mongoose.connect(mongoString, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+  const database = mongoose.connection
+*/
 
 /*  CONEXION A BD LOCAL CON COMPASS
   // Conexión a la base de datos MongoDB a traves de Mongoose
