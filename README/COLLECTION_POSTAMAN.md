@@ -12,6 +12,9 @@
  ## GET.
  ### Devuelve todas las tareas
 
+![POSTMAN](/README/Resources/img/get.PNG)
+
+
 "item": [
 		{
 			"name": "Get",
@@ -46,6 +49,8 @@
  ## POST.
  ### Crea una tarea
 
+ ![POSTMAN](/README/Resources/img/post.PNG)
+
 "item": [
  		{
 			"name": "Post",
@@ -76,6 +81,8 @@
 
 ## GET/ID.
 ### Devuelve una tarea
+
+![POSTMAN](/README/Resources/img/get-id.PNG)
 
 "item": [
         {
@@ -115,6 +122,8 @@
   ## PUT/ID.
  ### Actualiza una tarea
 
+ ![POSTMAN](/README/Resources/img/put-id.PNG)
+
 "item": [
         {
 			"name": "Put_id",
@@ -152,6 +161,8 @@
 
   ## DELETE/ID.
   ### Elimina una tarea
+
+  ![POSTMAN](/README/Resources/img/delete-id.PNG)
 
 "item": [
         {
