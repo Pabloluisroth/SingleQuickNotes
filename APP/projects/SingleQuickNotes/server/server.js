@@ -7,20 +7,18 @@ const app = require('./config/app');
 require('dotenv').config();
 const mongoString = process.env.DATABASE_URL
 
-mongoose.connect(mongoString);
+mongoose.connect(mongoString, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 const database = mongoose.connection
 
 /*  CONEXION A BD LOCAL CON COMPASS
-
-// Conexión a la base de datos MongoDB a traves de Mongoose
-var dbURI = 'mongodb://localhost/SingleQuickNotes';
-mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
-
+  // Conexión a la base de datos MongoDB a traves de Mongoose
+  var dbURI = 'mongodb://localhost/SingleQuickNotes';
+  mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 */
 
 // Configuracion de los eventos de la conexión Mongoose
 database.on('connected', function () {
-  console.log(chalk.hex('#24F803')(' Mongoose connection ' ));
+  console.log(chalk.hex('#24F803')(' Mongoose connection '+ process.env.DATABASE_URL ));
 });
 
 database.on('error',function (err) {
