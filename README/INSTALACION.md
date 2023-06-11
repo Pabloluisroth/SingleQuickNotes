@@ -16,7 +16,7 @@
 > 11.   Con el siguiente codigo introducido en `server.js` nuestro servidor realiza la conexion a la BD MongoDB y configura la gestion de eventosprincipales para interceptar las conexiones/desconexiones que se produzcan.
 >      ![INSTALACION](/README/Resources/img/conexiondb2.PNG)
 >
-## 1º   Ejecutar aplicacion con comandos Angular: 'SingleQuickNotes'
+## 1º   Ejecutar aplicacion `entorno de desarrollo Angular`
 >
 > 0.    Introduce `ng build` para crear el repositorio que sera desplegado con el servidor.
 > 1.    Introduce en la cmd: `ng serve --project SingleQuickNotes` para ejecutar aplicacion en el directorio raiz. 
@@ -24,7 +24,7 @@
 > 3.    La aplicacion esta en ejecución.
 > 4.    Abre un navegador web 'Crome' y situese en `http://localhost:4200/` para acceder a la aplicacion en ejecución.
 > 
-## 2º   Iniciar aplicacion : 'SingleQuickNotes'
+## 2º   Para iniciar aplicacion : 'SingleQuickNotes'
 >
 > 1.    Situado en el directorio  `server` introduce en la cmd:`node server.js` 
 > 2.    Desde la propia ventada de CMD deberiamos de ver el texto correspondiente al evento "conected", que indicara que la conexion se ha realizado correctamente.
