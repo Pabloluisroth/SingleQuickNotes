@@ -6,7 +6,7 @@
 > 3.   GET: `/api/tareas/:tareaId` Devuelve una tarea.
 > 4.   PUT: `/api/tareas/:tareaId` Modifica una tarea.    
 > 5.   DELETE: `/api/tareas/:tareaId` Borra una tarea. 
-
+.
  ## EndPoints
  
  ## GET.
@@ -33,4 +33,3 @@
   ### Elimina una tarea
 
   ![POSTMAN](/README/Resources/img/delete-id.PNG).
-.
