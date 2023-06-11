@@ -1,13 +1,14 @@
 {
   "name": "SingleQuickNotes",
   "version": "0.0.0",
+  "main":"server.js",
   "engines": {
     "node": "14.21.1",
     "npm": "6.14.17"
   },
   "scripts": {
     "ng": "ng",
-    "start": "node index.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
