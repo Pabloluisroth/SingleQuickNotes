@@ -9,8 +9,8 @@
 
  ## EndPoints
  
-> ## GET.
-> ### Devuelve todas las tareas
+ ## GET.
+ ### Devuelve todas las tareas
 
 "item": [
 		{
@@ -43,8 +43,8 @@
 		},
     ]
 
-> ## POST.
-> ### Crea una tarea
+ ## POST.
+ ### Crea una tarea
 
 "item": [
  		{
@@ -71,11 +71,11 @@
 					"response": []
 				}
 			]
-		},
-  ]
+		} 
+	]
 
-> ## GET/ID.
-> ### Devuelve una tarea
+## GET/ID.
+### Devuelve una tarea
 
 "item": [
         {
@@ -112,8 +112,8 @@
 		},
     ]
 
->  ## PUT/ID.
->  ### Actualiza una tarea
+  ## PUT/ID.
+ ### Actualiza una tarea
 
 "item": [
         {
@@ -150,8 +150,8 @@
 		},
 ]
 
->  ## DELETE/ID.
->  ### Elimina una tarea
+  ## DELETE/ID.
+  ### Elimina una tarea
 
 "item": [
         {

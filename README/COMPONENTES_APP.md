@@ -37,6 +37,6 @@
 > ### vista de la app con leyenda
 
 > 1.  list con aside.
-> ![COMPONENTES_APP](/README/Resources/img/)
+> ![COMPONENTES_APP](/README/Resources/img/lista-con-asie-y-header.png)
 > 1.  edit con aside.
-> ![COMPONENTES_APP](/README/Resources/img/)
+> ![COMPONENTES_APP](/README/Resources/img/editar-tarea-con-asie-y-header.png)
