@@ -19,12 +19,12 @@
 > 2.   edit-tarea.
 > ![COMPONENTES_APP](/README/Resources/img/edit-sin-aside.png)
 
-> ### vistas app con componente LISTA-TAREA
+> ### vistas app con la interface LISTA-TAREA
 
 > 1.  Interface de la aplicacion " TAREA-LISTA "
 > ![COMPONENTES_APP](/README/Resources/img/lista-con-aside.png)
 
-> ### vistas app con componente EDITAR-TAREA
+> ### vistas app con la interface EDITAR-TAREA
 
 > 1.  Interface de la aplicacion " EDITAR-TAREA "
 > ![COMPONENTES_APP](/README/Resources/img/editar-tarea-con-asie-y-header.png)
