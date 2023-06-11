@@ -1,5 +1,5 @@
 
-> ## Instalacion y configuracion de MongoDB como servicio.
+> ## Instalacion y configuracion de MongoDB como servicio windows en local con la App Compass de mongodb.
 > 
 > 1.   El primer paso sera descargar el instalador de MongoDB en nuestro ordenador desde la siguiente pagina: https://www.mongodb.com/try/download/community.
 > 2.   En esta pagina seleccionaremos la opcion que mas nos interese segun nuestro SO. En nuestro caso seleccionamos La `version: 6.0.5 current` y windows como plataforma.

@@ -12,20 +12,14 @@ mongoose.connect("mongodb+srv://admin:SingleQuickNotes@cluster0.v5hhzmy.mongodb.
   useUnifiedTopology: "true"
 })
 
-/*
-  mongoose.connect(mongoString, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
-  const database = mongoose.connection
-*/
-
-/*  CONEXION A BD LOCAL CON COMPASS
-  // Conexión a la base de datos MongoDB a traves de Mongoose
+/* PARA FUNCIONAMIENTO EN LOCAL CON COMPASS
   var dbURI = 'mongodb://localhost/SingleQuickNotes';
   mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 */
 
 // Configuracion de los eventos de la conexión Mongoose
 database.on('connected', function () {
-  console.log(chalk.hex('#24F803')(' Mongoose connection '+ process.env.DATABASE_URL ));
+  console.log(chalk.hex('#24F803')(' Mongoose default connection open to: '+ process.env.DATABASE_URL ));
 });
 
 database.on('error',function (err) {
@@ -45,7 +39,7 @@ process.on('SIGINT', function() {
 
 //Creamos el servidor http con la aplicación express y abrimos puerto
 const server = http.createServer(app);
-server.listen (config.port, () => console.log(chalk.hex('#24F803')(` \n SingleQuickNotes ™ running at port localhost: ${config.PORT_API}`)));
+server.listen (config.port, () => console.log(chalk.hex('#24F803')(` \n SingleQuickNotes running at port localhost: ${config.PORT_API}`)));
 logger.info(" SingleQuickNotes ™ ");
 setTimeout(() => {
   console.log(chalk.hex('#24F803')(` Autogenerating log server in directory: ${config.LOG}`));
