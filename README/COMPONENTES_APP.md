@@ -14,29 +14,18 @@
 
 > ### Componentes con servicio
 
-> 1.   tarea-ista.
+> 1.   tarea-lista.
 > ![COMPONENTES_APP](/README/Resources/img/lista.png)
 > 2.   edit-tarea.
 > ![COMPONENTES_APP](/README/Resources/img/edit-sin-aside.png)
 
-> ### vistas app con aside
+> ### vistas app con componente LISTA-TAREA
 
-> 1.  lista-con-aside.
+> 1.  Interface de la aplicacion " TAREA-LISTA "
 > ![COMPONENTES_APP](/README/Resources/img/lista-con-aside.png)
 
-> 2.  edit-con-aside.
-> ![COMPONENTES_APP](/README/Resources/img/edit-con-aside.png)
+> ### vistas app con componente EDITAR-TAREA
 
-> ### vistas de la app sin aside
-
-> 1.  edit-sin-aside.
-> ![COMPONENTES_APP](/README/Resources/img/edit.png)
-> 2.  lista-sin-aside.
-> ![COMPONENTES_APP](/README/Resources/img/list.png)
-
-> ### vista de la app con leyenda
-
-> 1.  list con header y aside.
-> ![COMPONENTES_APP](/README/Resources/img/lista-con-asie-y-header.png)
-> 1.  edit con header y aside.
+> 1.  Interface de la aplicacion " EDITAR-TAREA "
 > ![COMPONENTES_APP](/README/Resources/img/editar-tarea-con-asie-y-header.png)
+.
