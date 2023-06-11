@@ -17,7 +17,7 @@ module.exports = createLogger({
         }),
         new transports.MongoDB({
             level: 'info',
-            db : 'mongodb://localhost/SingleQuickNotes',
+            db : 'mongodb+srv://admin:SingleQuickNotes@cluster0.v5hhzmy.mongodb.net/logs',
             options: {
                 useUnifiedTopology: true
                 //useNewUrlParser: true,

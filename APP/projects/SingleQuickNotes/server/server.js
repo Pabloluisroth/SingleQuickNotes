@@ -4,26 +4,35 @@ const chalk  = require('chalk');
 var mongoose = require('mongoose');
 const logger = require('./config/logger');
 const app = require('./config/app');
+require('dotenv').config();
+const mongoString = process.env.DATABASE_URL
+
+mongoose.connect(mongoString);
+const database = mongoose.connection
+
+/*  CONEXION A BD LOCAL CON COMPASS
 
 // Conexión a la base de datos MongoDB a traves de Mongoose
 var dbURI = 'mongodb://localhost/SingleQuickNotes';
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
+*/
+
 // Configuracion de los eventos de la conexión Mongoose
-mongoose.connection.on('connected', function () {
-  console.log(chalk.hex('#24F803')(' Mongoose connection ' + dbURI));
+database.on('connected', function () {
+  console.log(chalk.hex('#24F803')(' Mongoose connection ' ));
 });
 
-mongoose.connection.on('error',function (err) {
+database.on('error',function (err) {
   console.log(' Mongoose default connection error: ' + err);
 });
 
-mongoose.connection.on('disconnected', function () {
+database.on('disconnected', function () {
   console.log(chalk.hex('#aa36a5')('\n Mongoose connection disconnected'));
 });
 
 process.on('SIGINT', function() {
-  mongoose.connection.close(function () {
+  database.close(function () {
     console.log(chalk.hex('#aa36a5')(' Mongoose through app termination'));
     process.exit(0);
   });
