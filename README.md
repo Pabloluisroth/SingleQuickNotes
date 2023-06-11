@@ -4,6 +4,6 @@
 ### [Configuracion e intalacion de servicios](/README/SERVICIO.md)
 ### [Instalacion y dependencias del proyecto](/README/INSTALACION.md)
 ### [Coleccion Postman](/README/COLLECTION_POSTAMAN.md)
-### [Rutas ó URL´s de la aplicacion](/README/RUTAS_APP.md)
+### [Componentes de la aplicacion](/README/RUTAS_APP.md)
 
 
