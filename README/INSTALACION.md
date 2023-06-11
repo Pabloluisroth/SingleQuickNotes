@@ -4,7 +4,7 @@
 > 0.   Antes que nada, tenemos que tener instalado en nuestro equipo Nodejs https://nodejs.org/en/download siendo la version mas estable con el proyecto en angular cli, la version `16.13.0`de Nodejs.
 > 1.   Comprobar la version instalada de node usando `node -v`.
 > 2.   Instalar `nvm install 16.13.0` y posteriormente `nvm use 16.13.0`
-> 3.   Descarge el código ó clone el repositorio https://github.com/Pabloluisroth/2-_Entrega_Parcial y ejecute `npm install` en la CMD para instalar los paquetes necesarios.
+> 3.   Descarge el código ó clone el repositorio https://github.com/Pabloluisroth/SingleQuickNotes y ejecute `npm install` en la CMD para instalar los paquetes necesarios.
 > 4.   Instalar framwework Angular `npm install @angular/cli`.
 > 5.   Instalar `npm install --save espress`.
 > 6.   Instalar `npm install --save body-parser`.	
@@ -27,7 +27,8 @@
 ## 2º   Iniciar aplicacion : 'SingleQuickNotes'
 >
 > 1.    Situado en el directorio  `server` introduce en la cmd:`node server.js` 
-> 4.    Abre un navegador web 'Crome' y situese en `http://localhost:3000/` para acceder a la aplicacion en funcionamiento en un entorno local.
-> 3.    Desde la propia ventada de CMD deberiamos de ver el texto correspondiente al evento "conected", que indicara que la conexion se ha realizado correctamente.
+> 2.    Desde la propia ventada de CMD deberiamos de ver el texto correspondiente al evento "conected", que indicara que la conexion se ha realizado correctamente.
 >      ![INSTALACION](/README/Resources/img/ejecutarServer.PNG).
+> 3.    Abre un navegador web 'Crome' y situese en `http://localhost:3000/` para acceder a la aplicacion en funcionamiento en un entorno local.
+
 
