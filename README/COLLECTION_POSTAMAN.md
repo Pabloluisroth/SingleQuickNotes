@@ -12,189 +12,25 @@
  ## GET.
  ### Devuelve todas las tareas
 
-![POSTMAN](/README/Resources/img/get.PNG)
-
-
-"item": [
-		{
-			"name": "Get",
-			"item": [
-				{
-					"name": "Devuelve_todas_las_tareas",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/tareas",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"tareas"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-    ]
+![POSTMAN](/README/Resources/img/get.PNG).
 
  ## POST.
  ### Crea una tarea
 
- ![POSTMAN](/README/Resources/img/post.PNG)
-
-"item": [
- 		{
-			"name": "Post",
-			"item": [
-				{
-					"name": "Crea_una_tarea",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/tareas",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"tareas"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		} 
-	]
+ ![POSTMAN](/README/Resources/img/post.PNG).
 
 ## GET/ID.
 ### Devuelve una tarea
 
-![POSTMAN](/README/Resources/img/get-id.PNG)
-
-"item": [
-        {
-			"name": "Get_id",
-			"item": [
-				{
-					"name": "Devuelve_una_tarea",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/tareas/:tareaId",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"tareas",
-								":tareaId"
-							],
-							"variable": [
-								{
-									"key": "tareaId",
-									"value": null
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-    ]
+![POSTMAN](/README/Resources/img/get-id.PNG).
 
   ## PUT/ID.
  ### Actualiza una tarea
 
- ![POSTMAN](/README/Resources/img/put-id.PNG)
-
-"item": [
-        {
-			"name": "Put_id",
-			"item": [
-				{
-					"name": "Modifica_una_tarea",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/tareas/:tareaId",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"tareas",
-								":tareaId"
-							],
-							"variable": [
-								{
-									"key": "tareaId",
-									"value": null
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-]
+ ![POSTMAN](/README/Resources/img/put-id.PNG).
 
   ## DELETE/ID.
   ### Elimina una tarea
 
-  ![POSTMAN](/README/Resources/img/delete-id.PNG)
-
-"item": [
-        {
-			"name": "Delete_id",
-			"item": [
-				{
-					"name": "Elimina_una_tarea",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/api/tareas/:tareaId",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"tareas",
-								":tareaId"
-							],
-							"variable": [
-								{
-									"key": "tareaId",
-									"value": null
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-]
+  ![POSTMAN](/README/Resources/img/delete-id.PNG).
+.
