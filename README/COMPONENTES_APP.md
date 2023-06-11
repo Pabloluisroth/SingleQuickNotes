@@ -9,7 +9,9 @@
 > ![COMPONENTES_APP](/README/Resources/img/header.png)
 > 3.   aside.
 >![COMPONENTESS_APP](/README/Resources/img/aside.png)
-> 4.   footer 
+> 4.    aside desplegado.
+>![COMPONENTESS_APP](/README/Resources/img/aside-desplegado.png)
+> 5.   footer 
 >![COMPONENTES_APP](/README/Resources/img/footer.png)
 
 > ### Componentes con servicio
