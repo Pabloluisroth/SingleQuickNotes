@@ -12,24 +12,24 @@
  ## GET.
  ### Devuelve todas las tareas
 
-![POSTMAN](/README/Resources/img/get.PNG).
+![POSTMAN](/README/Resources/img/get.png).
 
  ## POST.
  ### Crea una tarea
 
- ![POSTMAN](/README/Resources/img/post.PNG).
+ ![POSTMAN](/README/Resources/img/post.png).
 
 ## GET/ID.
 ### Devuelve una tarea
 
-![POSTMAN](/README/Resources/img/get-id.PNG).
+![POSTMAN](/README/Resources/img/get-id.png).
 
   ## PUT/ID.
  ### Actualiza una tarea
 
- ![POSTMAN](/README/Resources/img/put-id.PNG).
+ ![POSTMAN](/README/Resources/img/put-id.png).
 
   ## DELETE/ID.
   ### Elimina una tarea
 
-  ![POSTMAN](/README/Resources/img/delete-id.PNG).
+  ![POSTMAN](/README/Resources/img/delete-id.png).
