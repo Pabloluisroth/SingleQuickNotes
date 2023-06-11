@@ -22,7 +22,7 @@
 > ### vistas app con aside
 
 > 1.  lista-con-aside.
-> ![COMPONENTES_APP](/README/Resources/img/lista-con-aside)
+> ![COMPONENTES_APP](/README/Resources/img/lista-con-aside.png)
 
 > 2.  edit-con-aside.
 > ![COMPONENTES_APP](/README/Resources/img/edit-con-aside.png)
@@ -30,13 +30,13 @@
 > ### vistas de la app sin aside
 
 > 1.  edit-sin-aside.
-> ![COMPONENTES_APP](/README/Resources/img/)
-> 2.  edit-sin-aside.
 > ![COMPONENTES_APP](/README/Resources/img/edit.png)
+> 2.  lista-sin-aside.
+> ![COMPONENTES_APP](/README/Resources/img/list.png)
 
 > ### vista de la app con leyenda
 
-> 1.  list con aside.
+> 1.  list con header y aside.
 > ![COMPONENTES_APP](/README/Resources/img/lista-con-asie-y-header.png)
-> 1.  edit con aside.
+> 1.  edit con header y aside.
 > ![COMPONENTES_APP](/README/Resources/img/editar-tarea-con-asie-y-header.png)
