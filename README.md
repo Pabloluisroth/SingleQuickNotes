@@ -4,6 +4,6 @@
 ### [Instalacion y dependencias del proyecto](/README/INSTALACION.md)
 ### [Coleccion Postman](/README/COLLECTION_POSTAMAN.md)
 ### [Componentes de la aplicacion](/README/COMPONENTES_APP.md)
-### ![Gif](/README/Resources/gif/SingleQuickNotes.gif)
+### [Video](/README/Resources/gif/SingleQuickNotes.gif)
 
 
