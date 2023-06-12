@@ -1,0 +1,100 @@
+info:
+  _postman_id: 1b845f11-9f0e-4ac1-8ecb-db7cbcb321e7
+  name: SingleQuickNotes
+  schema: https://schema.getpostman.com/json/collection/v2.1.0/collection.json
+  _exporter_id: '24435150'
+item:
+  - name: Get
+    item:
+      - name: Devuelve_todas_las_tareas
+        request:
+          auth:
+            type: noauth
+          method: GET
+          header: []
+          url:
+            raw: http://localhost:3000/api/tareas
+            protocol: http
+            host:
+              - localhost
+            port: '3000'
+            path:
+              - api
+              - tareas
+        response: []
+  - name: Post
+    item:
+      - name: Crea_una_tarea
+        request:
+          method: POST
+          header: []
+          url:
+            raw: http://localhost:3000/api/tareas
+            protocol: http
+            host:
+              - localhost
+            port: '3000'
+            path:
+              - api
+              - tareas
+        response: []
+  - name: Get_id
+    item:
+      - name: Devuelve_una_tarea
+        request:
+          method: GET
+          header: []
+          url:
+            raw: http://localhost:3000/api/tareas/:tareaId
+            protocol: http
+            host:
+              - localhost
+            port: '3000'
+            path:
+              - api
+              - tareas
+              - ':tareaId'
+            variable:
+              - key: tareaId
+                value: null
+        response: []
+  - name: Put_id
+    item:
+      - name: Modifica_una_tarea
+        request:
+          method: PUT
+          header: []
+          url:
+            raw: http://localhost:3000/api/tareas/:tareaId
+            protocol: http
+            host:
+              - localhost
+            port: '3000'
+            path:
+              - api
+              - tareas
+              - ':tareaId'
+            variable:
+              - key: tareaId
+                value: null
+        response: []
+  - name: Delete_id
+    item:
+      - name: Elimina_una_tarea
+        request:
+          method: DELETE
+          header: []
+          url:
+            raw: http://localhost:3000/api/tareas/:tareaId
+            protocol: http
+            host:
+              - localhost
+            port: '3000'
+            path:
+              - api
+              - tareas
+              - ':tareaId'
+            variable:
+              - key: tareaId
+                value: null
+        response: []
