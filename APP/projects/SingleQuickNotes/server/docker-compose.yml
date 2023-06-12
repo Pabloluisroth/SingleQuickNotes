@@ -12,6 +12,6 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - mongodb://localhost/SingleQuickNotes
+      - mongodb+srv://admin:SingleQuickNotes@cluster0.v5hhzmy.mongodb.net/tareas
 volumes:
  mongodb:
