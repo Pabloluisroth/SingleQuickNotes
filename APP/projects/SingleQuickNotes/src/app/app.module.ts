@@ -8,6 +8,7 @@ import { TareaListaComponent } from './component/tasks/tarea-lista/tarea-lista.c
 import { HttpClientModule } from '@angular/common/http';
 import { TareaService } from './component/tasks/shared/tarea.service';
 import { FormsModule } from '@angular/forms';
+
 import { FooterComponent } from './component/semantic/footer/footer.component';
 import { NavComponent } from './component/semantic/nav/nav.component';
 import { HomeComponent } from './component/semantic/header/home.component';
